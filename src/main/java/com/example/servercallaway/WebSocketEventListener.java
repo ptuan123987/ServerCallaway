@@ -23,6 +23,7 @@ public class WebSocketEventListener {
     @Autowired
     private SimpMessageSendingOperations messageSendingOperations;
 
+
     @EventListener
     public void handleWebSocketConnectListener(SessionConnectedEvent event) {
         log.info("Got client");
