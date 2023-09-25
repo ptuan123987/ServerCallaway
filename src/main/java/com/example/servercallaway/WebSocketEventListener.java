@@ -34,7 +34,7 @@ public class WebSocketEventListener {
         String username = getUsername(event);
 
         if (username != null) {
-            log.info("User disconnected: " + username);
+            log.info("Users disconnected: " + username);
 
             ChatMessage chatMessage = new ChatMessage();
             chatMessage.setType(ChatMessage.MessageType.LEAVE);
